@@ -20,8 +20,6 @@ Here are some key features commonly found in a Netflix clone project:
 
     Responsive Design: Designing the interface to be visually appealing, user-friendly, and adaptable to different screen sizes.
 
-When creating a Netflix clone project, it's important to consider copyright and legal issues related to content distribution. Developers often use dummy content or work with content providers to ensure legal compliance.
-
 Technically, such a project can be built using various technologies and frameworks, including front-end technologies like React, Angular, or Vue.js for the user interface, backend technologies like Node.js or Python with frameworks like Express or Django, and a database system like MongoDB or MySQL to manage user and content data.
 
 As with any project, a Netflix clone requires proper planning, development, testing, and deployment to ensure a smooth and reliable user experience.
