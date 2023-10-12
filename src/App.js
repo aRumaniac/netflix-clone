@@ -5,16 +5,24 @@ import Login from './screen/Login';
 import { useEffect } from 'react';
 import { auth } from './stores/firebase';
 import { onAuthStateChanged } from 'firebase/auth'
+import { useDispatch } from 'react-redux';
+import { login, logout } from './counters/userSlice';
 
 function App() {
   const user = null;
+  const dispatch = useDispatch();
   
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, userAuth => {
       if(userAuth){
-        console.log(userAuth)
+        // login
+        dispatch(login(
+          {uid: userAuth.uid,
+          email: userAuth.email}
+        ))
       }else {
-        // looged out
+        // logged out
+        dispatch(logout);
       }
     });
 
