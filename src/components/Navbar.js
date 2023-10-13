@@ -33,7 +33,7 @@ function Navbar() {
                 onClick={() => navigate("/profile")}
                 className='nav__avatar'
                 src='https://wallpapers.com/images/high/netflix-profile-pictures-1000-x-1000-dyrp6bw6adbulg5b.webp'
-                alt='netflix avatar'
+                alt=''
             />
         </div>
         

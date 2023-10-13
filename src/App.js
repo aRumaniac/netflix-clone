@@ -17,10 +17,10 @@ function App() {
     const unsubscribe = onAuthStateChanged(auth, userAuth => {
       if(userAuth){
         // login
-        dispatch(login(
+      dispatch(login(
           {uid: userAuth.uid,
           email: userAuth.email}
-        ))
+        ));
       }else {
         // logged out
         dispatch(logout());
@@ -43,7 +43,7 @@ function App() {
         )}
       </Router>
     </div>
-  );
+    );
 }
 
 export default App;

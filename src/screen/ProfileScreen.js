@@ -1,7 +1,9 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import { useSelector } from 'react-redux';
+import { auth } from '../stores/firebase';
 import { selectUser } from '../counters/userSlice'
+import './ProfileScreen.css';
 
 function ProfileScreen() {
   const user= useSelector(selectUser);
