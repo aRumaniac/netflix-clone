@@ -21,7 +21,26 @@ function ProfileScreen() {
               <h2>{user.email}</h2>
               <div className='profileScreen__plans'>
                 <h3>Plans</h3>
-                <p></p>
+                <div className='profileScreen__data'>
+                  <p>Renewal Date :</p>
+                  <div className='profileScreen__subscription'>
+                    <div className='profileScreen__subscribeOptions'>
+                      <p>Netflix Standard<br/>1080p</p>
+                      
+                      <button>Subscribe</button>
+                    </div>
+                    <div className='profileScreen__subscribeOptions'>
+                      <p>Netflix Basic<br/>480p</p>
+                      
+                      <button>Subscribe</button>
+                    </div>
+                    <div className='profileScreen__subscribeOptions'>
+                      <p>Netflix Premium<br/>4K+HDR</p>
+                      
+                      <button>Subscribe</button>
+                    </div>
+                  </div>
+                </div>
                 <button onClick={() => auth.signOut()}
                 className='profileScreen__signOut'>Sign Out</button>
               </div>
@@ -29,7 +48,7 @@ function ProfileScreen() {
             </div>
         </div>
     </div>
-  )
+  );
 }
 
 export default ProfileScreen

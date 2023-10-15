@@ -2,6 +2,7 @@ import React from "react";
 import Row from "../components/Row";
 import Banner from "../components/Banner";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import requests from "../stores/request";
 
 function Homescreen() {
@@ -21,6 +22,7 @@ function Homescreen() {
       <Row title="Horror movies" fetchUrl={requests.fetchHorrorMovies} />
       <Row title="Romance Movies" fetchUrl={requests.fetchRomanceMovies} />
       <Row title="Documentaries" fetchUrl={requests.fetchDocumentaries} />
+      <Footer/>
     </div>
   );
 }

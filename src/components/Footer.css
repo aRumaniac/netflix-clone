@@ -1,0 +1,33 @@
+.footer{
+    background: #000;
+    border-top: 10px solid rgb(97, 94, 94);
+    color: rgb(180, 179, 179);
+    padding-top: 30px;
+}
+.footer__container{
+    max-width: 1170px;
+    margin: auto;
+}
+.footer__details{
+    margin: 30px 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer__row1, .footer__row2, .footer__row3,.footer__row4{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 20%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+a{
+    text-decoration: underline;
+    color: rgb(180, 179, 179);
+}
+
+.footer__link{
+    position: relative;
+    bottom: 30px;
+    
+}

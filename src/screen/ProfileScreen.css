@@ -9,8 +9,9 @@
     width: 50%;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 8%;
+    padding-top: 4%;
     max-width: 800px;
+    margin-bottom: 7px;
 }
 
 .profileScreen__info{
@@ -44,7 +45,7 @@
 .profileScreen__signOut{
     padding: 10px 20px;
     font-size: 1rem;
-    margin-top: 5%;
+    margin-top: 2%;
     width: 100%;
     color: #fff;
     background-color: #e50914;
@@ -60,4 +61,35 @@
 
 .profileScreen__plans{
     margin-top: 20px;
+}
+
+.profileScreen__data{
+    padding: 10px 0px;
+    overflow: hidden;
+}
+
+.profileScreen__subscription{
+    padding: 0px 12px;
+}
+
+.profileScreen__subscribeOptions{
+    padding-top: 18px;  
+    display: flex;
+    justify-content: space-between;
+    padding:  20px;
+    opacity: 0.8; 
+}
+
+.profileScreen__subscribeOptions:hover{
+    opacity: 1;
+}
+
+.profileScreen__subscribeOptions > button{
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #e50914;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
 }
